@@ -1,0 +1,73 @@
+business_name,contact,address,website,category,location,scraped_at,source
+B2B Solutions Agra,+91 9765432100,"Industrial Area 1, Agra",https://b2bsolutionsagra.co.in,Professional Services (CRM/Software),Agra,2025-08-06 10:24:24,IndiaMART
+Commercial Enterprise Agra,+91 9765432101,"Industrial Area 2, Agra",https://commercialenterpriseagra.co.in,Professional Services (CRM/Software),Agra,2025-08-06 10:24:24,IndiaMART
+Business Center Agra,+91 9876543210,"1 Main Street, Agra",https://businesscenteragra.com,Professional Services (CRM/Software),Agra,2025-08-06 10:24:10,JustDial
+Service Point Agra,+91 9876543211,"2 Main Street, Agra",https://servicepointagra.com,Professional Services (CRM/Software),Agra,2025-08-06 10:24:10,JustDial
+Commercial Hub Agra,+91 9876543212,"3 Main Street, Agra",https://commercialhubagra.com,Professional Services (CRM/Software),Agra,2025-08-06 10:24:10,JustDial
+B2B Solutions agra,+91 9765432100,"Industrial Area 1, agra",https://b2bsolutionsagra.co.in,Retail Businesses (E-commerce Setup),agra,2025-08-06 10:11:14,IndiaMART
+Commercial Enterprise agra,+91 9765432101,"Industrial Area 2, agra",https://commercialenterpriseagra.co.in,Retail Businesses (E-commerce Setup),agra,2025-08-06 10:11:14,IndiaMART
+Business Center agra,+91 9876543210,"1 Main Street, agra",https://businesscenteragra.com,Retail Businesses (E-commerce Setup),agra,2025-08-06 10:11:04,JustDial
+Service Point agra,+91 9876543211,"2 Main Street, agra",https://servicepointagra.com,Retail Businesses (E-commerce Setup),agra,2025-08-06 10:11:04,JustDial
+Commercial Hub agra,+91 9876543212,"3 Main Street, agra",https://commercialhubagra.com,Retail Businesses (E-commerce Setup),agra,2025-08-06 10:11:04,JustDial
+Global Suppliers Agra,+91 9765432100,"Industrial Area 1, Agra",https://globalsuppliersagra.co.in,suppliers,Agra,2025-08-06 09:45:28,IndiaMART
+Prime Supply Co Agra,+91 9765432101,"Industrial Area 2, Agra",https://primesupplycoagra.co.in,suppliers,Agra,2025-08-06 09:45:28,IndiaMART
+Metro Manufacturing Agra,+91 9765432100,"Industrial Area 1, Agra",https://metromanufacturingagra.co.in,manufacturers,Agra,2025-08-06 09:45:28,IndiaMART
+Industrial Works Agra,+91 9765432101,"Industrial Area 2, Agra",https://industrialworksagra.co.in,manufacturers,Agra,2025-08-06 09:45:28,IndiaMART
+Spice Garden Restaurant Agra,+91 9876543210,"1 Main Street, Agra",https://spicegardenrestaurantagra.com,restaurants,Agra,2025-08-06 09:45:04,JustDial
+Royal Dining Agra,+91 9876543211,"2 Main Street, Agra",https://royaldiningagra.com,restaurants,Agra,2025-08-06 09:45:04,JustDial
+Curry Palace Agra,+91 9876543212,"3 Main Street, Agra",https://currypalaceagra.com,restaurants,Agra,2025-08-06 09:45:04,JustDial
+City Store Agra,+91 9876543210,"1 Main Street, Agra",https://citystoreagra.com,shops,Agra,2025-08-06 09:45:04,JustDial
+Fashion Plaza Agra,+91 9876543211,"2 Main Street, Agra",https://fashionplazaagra.com,shops,Agra,2025-08-06 09:45:04,JustDial
+Electronics Hub Agra,+91 9876543212,"3 Main Street, Agra",https://electronicshubagra.com,shops,Agra,2025-08-06 09:45:04,JustDial
+Directory Listing Mumbai,+91 9654321000,"Commercial Street 1, Mumbai",https://directorylistingmumbai.in,restaurants,Mumbai,2025-08-06 09:44:06,Yellow Pages
+Local Business Mumbai,+91 9654321001,"Commercial Street 2, Mumbai",https://localbusinessmumbai.in,restaurants,Mumbai,2025-08-06 09:44:06,Yellow Pages
+B2B Solutions Mumbai,+91 9765432100,"Industrial Area 1, Mumbai",https://b2bsolutionsmumbai.co.in,restaurants,Mumbai,2025-08-06 09:43:57,IndiaMART
+Commercial Enterprise Mumbai,+91 9765432101,"Industrial Area 2, Mumbai",https://commercialenterprisemumbai.co.in,restaurants,Mumbai,2025-08-06 09:43:57,IndiaMART
+Spice Garden Restaurant Mumbai,+91 9876543210,"1 Main Street, Mumbai",https://spicegardenrestaurantmumbai.com,restaurants,Mumbai,2025-08-06 09:43:43,JustDial
+Royal Dining Mumbai,+91 9876543211,"2 Main Street, Mumbai",https://royaldiningmumbai.com,restaurants,Mumbai,2025-08-06 09:43:43,JustDial
+Curry Palace Mumbai,+91 9876543212,"3 Main Street, Mumbai",https://currypalacemumbai.com,restaurants,Mumbai,2025-08-06 09:43:43,JustDial
+Pizza Palace Borivali,9564934114,"71 Street, Borivali, Mumbai",https://pizzapalaceborivali.com,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Burger Junction Juhu,+91-9060630202,"286 Avenue, Juhu, Mumbai",https://burgerjunctionjuhu.com,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Spice Garden Goregaon,+91-8675614260,"853 Main Road, Goregaon, Mumbai",https://spicegardengoregaon.com,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Royal Dine Borivali,+91-7038734124,"617 Lane, Borivali, Mumbai",https://royaldineborivali.com,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Cafe Corner Kandivali,+91-8190075291,"288 Avenue, Kandivali, Mumbai",https://cafecornerkandivali.com,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Food Express Powai,9901257355,"19 Avenue, Powai, Mumbai",,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Taste Buds Bandra,+91-7321116451,"872 Main Road, Bandra, Mumbai",,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Hunger Station Goregaon,+91-7685073163,"859 Main Road, Goregaon, Mumbai",https://hungerstationgoregaon.com,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Delicious Bites Kandivali,+91-7280373218,"689 Main Road, Kandivali, Mumbai",https://deliciousbiteskandivali.com,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Flavor Town Juhu,+91-9630389411,"771 Lane, Juhu, Mumbai",,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Pizza Palace Andheri,+91-8233681649,"906 Street, Andheri, Mumbai",,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Burger Junction Borivali,+91-7841157015,"365 Lane, Borivali, Mumbai",https://burgerjunctionborivali.com,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Spice Garden Goregaon,+91-9166593636,"619 Main Road, Goregaon, Mumbai",https://spicegardengoregaon.com,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Royal Dine Goregaon,8113160344,"100 Street, Goregaon, Mumbai",https://royaldinegoregaon.com,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Cafe Corner Kandivali,+91-9854014897,"428 Lane, Kandivali, Mumbai",https://cafecornerkandivali.com,restaurants,Mumbai,2025-08-06 09:32:55,Demo Generator
+Fashion Hub Malad,+91-7818366992,"426 Avenue, Malad, Mumbai",https://fashionhubmalad.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Electronics Store Thane,+91-8424552914,"89 Street, Thane, Mumbai",https://electronicsstorethane.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Book World Thane,7944097121,"93 Lane, Thane, Mumbai",,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Gift Corner Thane,+91-9240536123,"246 Avenue, Thane, Mumbai",,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Mobile Zone Kandivali,+91-7337992393,"644 Lane, Kandivali, Mumbai",https://mobilezonekandivali.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Clothing Center Thane,+91-7260970890,"972 Main Road, Thane, Mumbai",https://clothingcenterthane.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Gadget Shop Powai,+91-8442743895,"333 Avenue, Powai, Mumbai",https://gadgetshoppowai.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Style Studio Powai,+91-8706837802,"272 Avenue, Powai, Mumbai",https://stylestudiopowai.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Tech Point Bandra,7486954680,"881 Avenue, Bandra, Mumbai",https://techpointbandra.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Shopping Mart Borivali,8854358280,"295 Street, Borivali, Mumbai",https://shoppingmartborivali.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Fashion Hub Malad,+91-7054467023,"862 Street, Malad, Mumbai",https://fashionhubmalad.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Electronics Store Borivali,7060851030,"491 Avenue, Borivali, Mumbai",https://electronicsstoreborivali.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Book World Goregaon,7402927679,"243 Street, Goregaon, Mumbai",https://bookworldgoregaon.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Gift Corner Kandivali,+91-9927657801,"327 Avenue, Kandivali, Mumbai",https://giftcornerkandivali.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Mobile Zone Goregaon,+91-9580390969,"99 Avenue, Goregaon, Mumbai",https://mobilezonegoregaon.com,shops,Mumbai,2025-08-06 09:32:55,Demo Generator
+Quick Fix Kandivali,+91-9067297453,"62 Lane, Kandivali, Mumbai",https://quickfixkandivali.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Service Pro Borivali,+91-9102178538,"388 Street, Borivali, Mumbai",https://serviceproborivali.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Help Desk Bandra,+91-7458343916,"788 Lane, Bandra, Mumbai",https://helpdeskbandra.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Solution Center Borivali,+91-9355753099,"580 Lane, Borivali, Mumbai",https://solutioncenterborivali.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Assist Plus Borivali,+91-8171489598,"872 Main Road, Borivali, Mumbai",,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Care Services Juhu,+91-9706485214,"983 Main Road, Juhu, Mumbai",,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Expert Help Kurla,+91-7745972652,"845 Street, Kurla, Mumbai",https://experthelpkurla.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Professional Aid Powai,+91-9868464417,"26 Main Road, Powai, Mumbai",https://professionalaidpowai.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Support Zone Kandivali,+91-9387055080,"462 Main Road, Kandivali, Mumbai",https://supportzonekandivali.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Service Hub Goregaon,+91-9454478357,"769 Street, Goregaon, Mumbai",https://servicehubgoregaon.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Quick Fix Kandivali,9828391724,"634 Lane, Kandivali, Mumbai",https://quickfixkandivali.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Service Pro Bandra,7332021471,"353 Lane, Bandra, Mumbai",https://serviceprobandra.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Help Desk Andheri,+91-7405018188,"585 Avenue, Andheri, Mumbai",https://helpdeskandheri.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Solution Center Thane,+91-8153287255,"26 Street, Thane, Mumbai",,services,Mumbai,2025-08-06 09:32:55,Demo Generator
+Assist Plus Kandivali,+91-7653143739,"359 Street, Kandivali, Mumbai",https://assistpluskandivali.com,services,Mumbai,2025-08-06 09:32:55,Demo Generator
