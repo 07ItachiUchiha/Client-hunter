@@ -213,3 +213,11 @@ NotImplementedError
 2025-08-09 10:19:33,014 - INFO - Scraping completed. Total businesses found: 5
 2025-08-09 10:47:29,309 - INFO - Database initialized successfully
 2025-08-09 10:47:29,401 - INFO - All scrapers initialized successfully
+2025-08-09 10:54:10,966 - INFO - Database initialized successfully
+2025-08-09 10:54:11,038 - INFO - All scrapers initialized successfully
+2025-08-09 10:54:32,401 - INFO - Starting to scrape location: Agra with sources: ['googlemaps']
+2025-08-09 10:54:32,401 - INFO - Scraping from googlemaps...
+2025-08-09 10:54:32,401 - INFO - Google Maps search for 'Retail Businesses (E-commerce Setup)' in Agra
+2025-08-09 10:54:33,407 - INFO - Google Maps found 5 businesses
+2025-08-09 10:54:44,033 - INFO - Scraped 5 businesses from googlemaps, 0 stored
+2025-08-09 10:54:47,793 - INFO - Scraping completed. Total businesses found: 5

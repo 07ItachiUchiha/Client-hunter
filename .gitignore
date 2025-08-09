@@ -1,0 +1,58 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.env
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Web scraping specific
+.scrapy/
+dbs/
+logs/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Local development
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Data files
+*.csv
+*.json
+*.xlsx
+*.db
+*.sqlite3
+
+# Logs
+*.log
+log.txt
+logs/
+
+# Temporary files
+tmp/
+temp/
+
+# Credentials and secrets
+credentials.py
+config.ini
+secrets.json
+.env

@@ -6,11 +6,22 @@ from typing import Dict, List
 # Database settings
 DATABASE_PATH = "data/businesses.db"
 
+# SCRAPER MODE - Choose between 'REAL' or 'DEMO'
+SCRAPER_MODE = os.getenv('SCRAPER_MODE', 'REAL')  # Default to REAL data
+
+# Data quality settings
+REQUIRE_REAL_DATA = True  # Set to False to allow demo data for testing
+VALIDATE_PHONE_NUMBERS = True
+VALIDATE_WEBSITES = True
+
 # Scraping settings
 DEFAULT_DELAY_MIN = 1.0
 DEFAULT_DELAY_MAX = 3.0
 REQUEST_TIMEOUT = 10
 MAX_RETRIES = 3
+
+# Google Maps API configuration
+GOOGLE_MAPS_API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
 
 # User agents for rotation
 USER_AGENTS = [
@@ -21,7 +32,34 @@ USER_AGENTS = [
     'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:121.0) Gecko/20100101 Firefox/121.0'
 ]
 
-# Scraping sources configuration
+# Scraping sources configuration for REAL data
+REAL_SCRAPING_SOURCES = {
+    'justdial_real': {
+        'name': 'JustDial (Real)',
+        'base_url': 'https://www.justdial.com',
+        'enabled': True,
+        'max_pages': 3,
+        'delay_range': (2, 4),
+        'description': 'Real business data from JustDial directory'
+    },
+    'google_maps_api': {
+        'name': 'Google Maps API',
+        'base_url': 'https://maps.googleapis.com',
+        'enabled': bool(GOOGLE_MAPS_API_KEY),
+        'max_results': 60,
+        'delay_range': (1, 2),
+        'description': 'High-quality data from Google Places API'
+    },
+    'local_directories': {
+        'name': 'Local Directories',
+        'enabled': True,
+        'max_results': 20,
+        'delay_range': (2, 5),
+        'description': 'Multiple local business directories'
+    }
+}
+
+# Legacy demo sources (kept for compatibility)
 SCRAPING_SOURCES = {
     'justdial': {
         'name': 'JustDial',
