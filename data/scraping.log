@@ -221,3 +221,174 @@ NotImplementedError
 2025-08-09 10:54:33,407 - INFO - Google Maps found 5 businesses
 2025-08-09 10:54:44,033 - INFO - Scraped 5 businesses from googlemaps, 0 stored
 2025-08-09 10:54:47,793 - INFO - Scraping completed. Total businesses found: 5
+2025-08-09 15:42:19,764 - INFO - Database initialized successfully
+2025-08-09 15:42:19,911 - INFO - All scrapers initialized successfully
+2025-08-09 15:43:04,789 - INFO - Starting to scrape location: Agra with sources: ['justdial', 'indiamart', 'yellowpages', 'googlemaps', 'it_clients']
+2025-08-09 15:43:04,790 - INFO - Scraping from justdial...
+2025-08-09 15:43:04,790 - INFO - Searching JustDial for 'restaurants' in Agra
+2025-08-09 15:43:06,694 - INFO - Searching JustDial for 'shops' in Agra
+2025-08-09 15:43:07,918 - INFO - JustDial found 6 businesses
+2025-08-09 15:43:15,474 - INFO - Scraped 6 businesses from justdial, 6 stored
+2025-08-09 15:43:18,739 - INFO - Scraping from indiamart...
+2025-08-09 15:43:20,753 - INFO - IndiaMART found 4 businesses
+2025-08-09 15:43:26,182 - INFO - Scraped 4 businesses from indiamart, 4 stored
+2025-08-09 15:43:29,269 - INFO - Scraping from yellowpages...
+2025-08-09 15:43:29,269 - INFO - Yellow Pages search for '' in Agra (using sample data)
+2025-08-09 15:43:30,278 - INFO - Yellow Pages found 2 businesses
+2025-08-09 15:43:35,053 - INFO - Scraped 2 businesses from yellowpages, 2 stored
+2025-08-09 15:43:39,327 - INFO - Scraping from googlemaps...
+2025-08-09 15:43:39,328 - INFO - Google Maps search for '' in Agra
+2025-08-09 15:43:40,335 - INFO - Google Maps found 6 businesses
+2025-08-09 15:43:50,819 - INFO - Scraped 6 businesses from googlemaps, 6 stored
+2025-08-09 15:43:55,221 - INFO - Scraping from it_clients...
+2025-08-09 15:43:55,221 - INFO - Targeting 'restaurants' businesses for IT services in Agra
+2025-08-09 15:43:56,117 - INFO - Targeting 'retail_shops' businesses for IT services in Agra
+2025-08-09 15:43:57,091 - INFO - Targeting 'medical_clinics' businesses for IT services in Agra
+2025-08-09 15:43:57,909 - INFO - Targeting 'educational_institutes' businesses for IT services in Agra
+2025-08-09 15:43:58,745 - INFO - Targeting 'real_estate' businesses for IT services in Agra
+2025-08-09 15:43:59,656 - INFO - Targeting 'manufacturing' businesses for IT services in Agra
+2025-08-09 15:44:00,631 - INFO - Targeting 'accounting_firms' businesses for IT services in Agra
+2025-08-09 15:44:01,201 - INFO - Targeting 'law_firms' businesses for IT services in Agra
+2025-08-09 15:44:02,159 - INFO - Targeting 'beauty_salons' businesses for IT services in Agra
+2025-08-09 15:44:03,038 - INFO - Targeting 'fitness_centers' businesses for IT services in Agra
+2025-08-09 15:44:03,874 - INFO - Targeting 'automobile_dealers' businesses for IT services in Agra
+2025-08-09 15:44:04,691 - INFO - Targeting 'hotels' businesses for IT services in Agra
+2025-08-09 15:44:05,509 - INFO - Found 24 potential IT service clients in Agra
+2025-08-09 15:44:34,891 - INFO - Scraped 24 businesses from it_clients, 24 stored
+2025-08-09 15:44:38,138 - INFO - Scraping completed. Total businesses found: 42
+2025-08-09 15:54:13,740 - INFO - Database initialized successfully
+2025-08-09 15:54:13,808 - INFO - All scrapers initialized successfully
+2025-08-09 15:54:41,956 - INFO - Starting to scrape location: Agra with sources: ['justdial', 'indiamart', 'yellowpages', 'googlemaps', 'it_clients']
+2025-08-09 15:54:41,956 - INFO - Scraping from justdial...
+2025-08-09 15:54:41,956 - INFO - Searching JustDial for 'restaurants' in Agra
+2025-08-09 15:54:43,643 - INFO - Searching JustDial for 'shops' in Agra
+2025-08-09 15:54:45,058 - INFO - JustDial found 6 businesses
+2025-08-09 15:54:55,193 - INFO - Scraped 6 businesses from justdial, 6 stored
+2025-08-09 15:54:59,884 - INFO - Scraping from indiamart...
+2025-08-09 15:55:01,888 - INFO - IndiaMART found 4 businesses
+2025-08-09 15:55:07,191 - INFO - Scraped 4 businesses from indiamart, 4 stored
+2025-08-09 15:55:09,215 - INFO - Scraping from yellowpages...
+2025-08-09 15:55:09,216 - INFO - Yellow Pages search for '' in Agra (using sample data)
+2025-08-09 15:55:10,219 - INFO - Yellow Pages found 2 businesses
+2025-08-09 15:55:14,135 - INFO - Scraped 2 businesses from yellowpages, 2 stored
+2025-08-09 15:55:18,065 - INFO - Scraping from googlemaps...
+2025-08-09 15:55:18,066 - INFO - Google Maps search for '' in Agra
+2025-08-09 15:55:19,070 - INFO - Google Maps found 6 businesses
+2025-08-09 15:55:29,792 - INFO - Scraped 6 businesses from googlemaps, 6 stored
+2025-08-09 15:55:33,464 - INFO - Scraping from it_clients...
+2025-08-09 15:55:33,464 - INFO - Targeting 'restaurants' businesses for IT services in Agra
+2025-08-09 15:55:34,191 - INFO - Targeting 'retail_shops' businesses for IT services in Agra
+2025-08-09 15:55:34,947 - INFO - Targeting 'medical_clinics' businesses for IT services in Agra
+2025-08-09 15:55:35,923 - INFO - Targeting 'educational_institutes' businesses for IT services in Agra
+2025-08-09 15:55:36,634 - INFO - Targeting 'real_estate' businesses for IT services in Agra
+2025-08-09 15:55:37,346 - INFO - Targeting 'manufacturing' businesses for IT services in Agra
+2025-08-09 15:55:37,873 - INFO - Targeting 'accounting_firms' businesses for IT services in Agra
+2025-08-09 15:55:38,552 - INFO - Targeting 'law_firms' businesses for IT services in Agra
+2025-08-09 15:55:39,200 - INFO - Targeting 'beauty_salons' businesses for IT services in Agra
+2025-08-09 15:55:40,050 - INFO - Targeting 'fitness_centers' businesses for IT services in Agra
+2025-08-09 15:55:40,790 - INFO - Targeting 'automobile_dealers' businesses for IT services in Agra
+2025-08-09 15:55:41,734 - INFO - Targeting 'hotels' businesses for IT services in Agra
+2025-08-09 15:55:42,382 - INFO - Found 24 potential IT service clients in Agra
+2025-08-09 15:56:11,538 - INFO - Scraped 24 businesses from it_clients, 24 stored
+2025-08-09 15:56:15,358 - INFO - Scraping completed. Total businesses found: 42
+2025-08-09 16:11:13,308 - INFO - Database initialized successfully
+2025-08-09 16:11:13,368 - INFO - All scrapers initialized successfully
+2025-08-09 16:58:20,613 - INFO - Starting to scrape location: Agra with sources: ['justdial', 'indiamart', 'it_clients']
+2025-08-09 16:58:20,618 - INFO - Scraping from justdial...
+2025-08-09 16:58:20,619 - INFO - Searching JustDial for 'Manufacturing Units (Digital Transformation)' in Agra
+2025-08-09 16:58:22,179 - INFO - JustDial found 3 businesses
+2025-08-09 16:58:25,510 - INFO - Scraped 3 businesses from justdial, 3 stored
+2025-08-09 16:58:29,465 - INFO - Scraping from indiamart...
+2025-08-09 16:58:30,469 - INFO - IndiaMART found 2 businesses
+2025-08-09 16:58:33,081 - INFO - Scraped 2 businesses from indiamart, 2 stored
+2025-08-09 16:58:37,928 - INFO - Scraping from it_clients...
+2025-08-09 16:58:37,928 - INFO - Targeting 'Manufacturing Units (Digital Transformation)' businesses for IT services in Agra
+2025-08-09 16:58:38,452 - INFO - Found 2 potential IT service clients in Agra
+2025-08-09 16:58:40,665 - INFO - Scraped 2 businesses from it_clients, 2 stored
+2025-08-09 16:58:43,928 - INFO - Scraping completed. Total businesses found: 7
+2025-08-09 17:09:37,703 - INFO - Database initialized successfully
+2025-08-09 17:09:37,765 - INFO - All scrapers initialized successfully
+2025-08-09 17:21:01,845 - INFO - Database initialized successfully
+2025-08-09 17:21:01,907 - INFO - All ACTUAL real scrapers initialized successfully
+2025-08-09 17:23:08,101 - INFO - Database initialized successfully
+2025-08-09 17:23:08,220 - INFO - All ACTUAL real scrapers initialized successfully
+2025-08-09 17:25:05,892 - INFO - Database initialized successfully
+2025-08-09 17:25:05,948 - INFO - All ACTUAL real scrapers initialized successfully
+2025-08-09 17:25:23,359 - ERROR - Scraping error: 'RealBusinessScraper' object has no attribute 'quick_scrape'
+2025-08-09 17:26:27,823 - ERROR - Scraping error: 'RealBusinessScraper' object has no attribute 'quick_scrape'
+2025-08-09 17:26:33,328 - ERROR - Scraping error: 'RealBusinessScraper' object has no attribute 'quick_scrape'
+2025-08-09 17:26:43,835 - INFO - Starting REAL data scraping for location: Agra with sources: ['justdial', 'indiamart', 'yellowpages', 'googlemaps', 'it_clients']
+2025-08-09 17:26:43,836 - ERROR - Unknown scraper source: justdial
+2025-08-09 17:26:43,836 - ERROR - Unknown scraper source: indiamart
+2025-08-09 17:26:43,836 - ERROR - Unknown scraper source: yellowpages
+2025-08-09 17:26:43,836 - ERROR - Unknown scraper source: googlemaps
+2025-08-09 17:26:43,837 - INFO - Scraping REAL data from it_clients...
+2025-08-09 17:26:43,837 - INFO - Targeting 'Healthcare Providers (Digital Systems)' businesses for IT services in Agra
+2025-08-09 17:26:44,663 - INFO - Found 2 potential IT service clients in Agra
+2025-08-09 17:26:44,665 - INFO - Validated 2 out of 2 businesses
+2025-08-09 17:26:44,682 - INFO - Scraped 2 REAL businesses from it_clients, 2 stored
+2025-08-09 17:26:49,056 - INFO - Removed 0 duplicate businesses
+2025-08-09 17:26:49,056 - INFO - Data Quality Report:
+2025-08-09 17:26:49,057 - INFO -   Total businesses: 2
+2025-08-09 17:26:49,057 - INFO -   With contact info: 2 (100.0%)
+2025-08-09 17:26:49,057 - INFO -   With website: 2 (100.0%)
+2025-08-09 17:26:49,057 - INFO -   With address: 2 (100.0%)
+2025-08-09 17:26:49,058 - INFO -   With coordinates: 0 (0.0%)
+2025-08-09 17:26:49,058 - WARNING - Found 2 businesses with demo data indicators!
+2025-08-09 17:26:49,070 - INFO - REAL data scraping completed. Total businesses found: 2
+2025-08-09 17:30:54,629 - INFO - Database initialized successfully
+2025-08-09 17:30:54,702 - INFO - All ACTUAL real scrapers initialized successfully
+2025-08-09 17:31:12,774 - INFO - Starting REAL data scraping for location: Agra with sources: ['justdial', 'indiamart', 'yellowpages', 'googlemaps']
+2025-08-09 17:31:12,776 - ERROR - Unknown scraper source: justdial
+2025-08-09 17:31:12,776 - ERROR - Unknown scraper source: indiamart
+2025-08-09 17:31:12,778 - ERROR - Unknown scraper source: yellowpages
+2025-08-09 17:31:12,779 - ERROR - Unknown scraper source: googlemaps
+2025-08-09 17:31:12,779 - INFO - Removed 0 duplicate businesses
+2025-08-09 17:31:12,780 - WARNING - No businesses found - check scraper configuration
+2025-08-09 17:31:12,794 - INFO - REAL data scraping completed. Total businesses found: 0
+2025-08-09 17:39:50,823 - INFO - Database initialized successfully
+2025-08-09 17:39:50,880 - INFO - All REAL scrapers initialized successfully - ZERO demo data sources
+2025-08-09 17:41:04,733 - INFO - Starting REAL data scraping for location: Agra with sources: ['justdial', 'yellowpages', 'googlemaps']
+2025-08-09 17:41:04,733 - INFO - Scraping REAL data from justdial (using justdial_real)...
+2025-08-09 17:41:04,776 - INFO - Actual JustDial session initialized for real web scraping
+2025-08-09 17:41:04,777 - INFO - Making REAL HTTP request to JustDial for 'services' in Agra
+2025-08-09 17:41:04,777 - INFO - Trying JustDial URL: https://www.justdial.com/Agra/Services
+2025-08-09 17:41:04,777 - INFO - Fetching real data from: https://www.justdial.com/Agra/Services
+2025-08-09 17:41:15,997 - ERROR - Error fetching real data from JustDial: Connection timeout to host https://www.justdial.com/Agra/IT-Services/nct-10278073
+2025-08-09 17:41:15,997 - INFO - Using fallback scraping method for services in Agra
+2025-08-09 17:41:17,074 - INFO - Parsing real HTML content from JustDial
+2025-08-09 17:41:17,081 - INFO - Found 0 company names and 0 doc IDs
+2025-08-09 17:41:17,081 - INFO - Extracted 0 businesses from JSON data
+2025-08-09 17:41:17,087 - WARNING - No .resultbox elements found - JustDial structure may have changed
+2025-08-09 17:41:17,087 - INFO - Successfully extracted 0 businesses from real JustDial HTML
+2025-08-09 17:41:17,088 - WARNING - Real scraping attempted but blocked. Location: Agra, Category: services
+2025-08-09 17:41:17,089 - WARNING - No businesses found with: https://www.justdial.com/Agra/Services
+2025-08-09 17:41:17,089 - INFO - Trying JustDial URL: https://www.justdial.com/Agra/Services-near-me
+2025-08-09 17:41:17,089 - INFO - Fetching real data from: https://www.justdial.com/Agra/Services-near-me
+2025-08-09 17:41:18,418 - INFO - Successfully fetched 523999 characters of HTML from JustDial
+2025-08-09 17:41:18,419 - INFO - Parsing real HTML content from JustDial
+2025-08-09 17:41:18,422 - INFO - Found 10 JSON matches with pattern
+2025-08-09 17:41:18,425 - INFO - Found 0 company names and 10 doc IDs
+2025-08-09 17:41:18,425 - INFO - Extracted 0 businesses from JSON data
+2025-08-09 17:41:18,429 - INFO - Found 10 business elements using .resultbox selector
+2025-08-09 17:41:18,431 - INFO - Successfully extracted 10 businesses from real JustDial HTML
+2025-08-09 17:41:18,433 - INFO - Success! Found 10 businesses with: https://www.justdial.com/Agra/Services-near-me
+2025-08-09 17:41:22,444 - INFO - Actual JustDial scraping found 10 real businesses
+2025-08-09 17:41:22,445 - INFO - Validated 10 out of 10 businesses
+2025-08-09 17:41:22,451 - INFO - Scraped 10 REAL businesses from justdial (via justdial_real), 10 stored
+2025-08-09 17:41:26,450 - INFO - Scraping REAL data from yellowpages (using yellowpages_real)...
+2025-08-09 17:41:26,470 - INFO - Making REAL HTTP request to Yellow Pages for 'services' in Agra
+2025-08-09 17:41:27,800 - ERROR - Error in real Yellow Pages scraping: Cannot connect to host www.yellowpages.in:443 ssl:True [SSLCertVerificationError: (1, "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.yellowpages.in'. (_ssl.c:1018)")]
+2025-08-09 17:41:27,800 - INFO - Yellow Pages real scraping found 0 businesses
+2025-08-09 17:41:27,801 - WARNING - No businesses found from yellowpages
+2025-08-09 17:41:33,358 - INFO - Scraping REAL data from googlemaps (using google_maps_api)...
+2025-08-09 17:41:33,358 - INFO - Google Maps API key not available - skipping real API scraping
+2025-08-09 17:41:33,358 - WARNING - No businesses found from googlemaps
+2025-08-09 17:41:38,402 - INFO - Removed 0 duplicate businesses
+2025-08-09 17:41:38,403 - INFO - Data Quality Report:
+2025-08-09 17:41:38,403 - INFO -   Total businesses: 10
+2025-08-09 17:41:38,403 - INFO -   With contact info: 9 (90.0%)
+2025-08-09 17:41:38,403 - INFO -   With website: 0 (0.0%)
+2025-08-09 17:41:38,404 - INFO -   With address: 10 (100.0%)
+2025-08-09 17:41:38,404 - INFO -   With coordinates: 0 (0.0%)
+2025-08-09 17:41:38,417 - INFO - REAL data scraping completed. Total businesses found: 10

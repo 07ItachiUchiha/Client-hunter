@@ -5,9 +5,9 @@ from datetime import datetime
 import random
 import os
 
-from .real_scrapers_simple import RealJustDialScraper, RealGoogleMapsAPIScraper, RealLocalBusinessScraper
-from .maps_scraper import PlaywrightScraper  # Keep the existing Playwright scraper
-from .it_client_targeting import ITClientTargetingScraper  # Keep the IT targeting scraper
+from .actual_real_scrapers import ActualJustDialScraper, ActualYellowPagesScraper, RealGoogleMapsAPIScraper
+from .maps_scraper import PlaywrightScraper  # Browser-based scraper (real data only)
+# Removed ITClientTargetingScraper - generates demo data
 
 
 class RealBusinessScraper:
@@ -23,18 +23,33 @@ class RealBusinessScraper:
         self.init_scrapers()
     
     def init_scrapers(self):
-        """Initialize all real scraper instances."""
+        """Initialize all REAL scraper instances - NO DEMO DATA."""
         try:
             self.scrapers = {
-                'justdial_real': RealJustDialScraper(self.utils),
+                'justdial_real': ActualJustDialScraper(self.utils),
                 'google_maps_api': RealGoogleMapsAPIScraper(self.utils),
-                'local_directories': RealLocalBusinessScraper(self.utils),
-                'playwright': PlaywrightScraper(self.utils),  # Browser-based scraper
-                'it_clients': ITClientTargetingScraper(self.utils)  # IT client targeting
+                'yellowpages_real': ActualYellowPagesScraper(self.utils),
+                'playwright': PlaywrightScraper(self.utils)  # Browser-based scraper (real data only)
+                # Removed 'it_clients': ITClientTargetingScraper - generates demo data
             }
-            logging.info("All real scrapers initialized successfully")
+            
+            # Create source name mappings for common names
+            self.source_mappings = {
+                'justdial': 'justdial_real',
+                'googlemaps': 'google_maps_api', 
+                'google_maps': 'google_maps_api',
+                'yellowpages': 'yellowpages_real',
+                'maps': 'playwright',
+                'browser': 'playwright'
+            }
+            
+            logging.info("All REAL scrapers initialized successfully - ZERO demo data sources")
         except Exception as e:
             logging.error(f"Error initializing real scrapers: {e}")
+    
+    def _resolve_source_name(self, source: str) -> str:
+        """Resolve common source names to actual scraper keys."""
+        return self.source_mappings.get(source, source)
     
     async def scrape_location(self, 
                             location: str, 
@@ -54,8 +69,8 @@ class RealBusinessScraper:
             Dictionary with scraping results and statistics
         """
         if sources is None:
-            # Default to most reliable sources
-            sources = ['justdial_real', 'local_directories', 'it_clients']
+            # Default to most reliable actual scraping sources
+            sources = ['justdial_real', 'yellowpages_real', 'it_clients']
             
             # Add Google Maps if API key is available
             if os.getenv('GOOGLE_MAPS_API_KEY'):
@@ -82,16 +97,19 @@ class RealBusinessScraper:
         
         # Scrape from each source
         for source in sources:
-            if source not in self.scrapers:
-                error_msg = f"Unknown scraper source: {source}"
+            # Resolve source name (e.g., 'justdial' -> 'justdial_real')
+            resolved_source = self._resolve_source_name(source)
+            
+            if resolved_source not in self.scrapers:
+                error_msg = f"Unknown scraper source: {source} (resolved to: {resolved_source})"
                 logging.error(error_msg)
                 results['errors'].append(error_msg)
                 continue
             
             try:
-                logging.info(f"Scraping REAL data from {source}...")
+                logging.info(f"Scraping REAL data from {source} (using {resolved_source})...")
                 source_businesses = await self._scrape_from_source(
-                    source, location, category, max_results_per_source
+                    resolved_source, location, category, max_results_per_source
                 )
                 
                 if source_businesses:
@@ -106,10 +124,10 @@ class RealBusinessScraper:
                         stored_count = self.db_manager.insert_businesses_batch(geocoded_businesses)
                         
                         all_businesses.extend(geocoded_businesses)
-                        results['businesses_by_source'][source] = len(geocoded_businesses)
-                        results['sources_scraped'].append(source)
+                        results['businesses_by_source'][source] = len(geocoded_businesses)  # Use original source name
+                        results['sources_scraped'].append(source)  # Use original source name
                         
-                        logging.info(f"Scraped {len(geocoded_businesses)} REAL businesses from {source}, {stored_count} stored")
+                        logging.info(f"Scraped {len(geocoded_businesses)} REAL businesses from {source} (via {resolved_source}), {stored_count} stored")
                     else:
                         logging.warning(f"No valid businesses found from {source}")
                         results['businesses_by_source'][source] = 0
@@ -162,10 +180,10 @@ class RealBusinessScraper:
         
         try:
             if source == 'justdial_real':
-                businesses = await scraper.search_businesses(location, category, max_pages=3)
+                businesses = await scraper.search_businesses(location, category, max_pages=2)
             elif source == 'google_maps_api':
                 businesses = await scraper.search_businesses(location, category, max_results)
-            elif source == 'local_directories':
+            elif source == 'yellowpages_real':
                 businesses = await scraper.search_businesses(location, category, max_results)
             elif source == 'playwright':
                 # Use browser-based scraping for complex sites
@@ -317,7 +335,7 @@ class RealBusinessScraper:
         if demo_indicators > 0:
             logging.warning(f"Found {demo_indicators} businesses with demo data indicators!")
         else:
-            logging.info("✅ All businesses appear to be real data")
+            logging.info("[VALIDATED] All businesses appear to be real data")
     
     async def _cleanup_scrapers(self, sources: List[str]):
         """Clean up scraper sessions."""
@@ -329,3 +347,38 @@ class RealBusinessScraper:
                         await scraper.close_session()
                 except Exception as e:
                     logging.debug(f"Error cleaning up {source}: {e}")
+    
+    async def quick_scrape(self, location: str, category: str = "", selected_sources: Optional[List[str]] = None) -> Dict[str, Any]:
+        """Quick scrape with real data only - fewer results, faster execution."""
+        logging.info(f"[QUICK SCRAPE] Starting for location: {location}, category: {category}")
+        
+        # Use selected sources or default to main real sources (common names will be resolved)
+        sources = selected_sources or ['justdial', 'googlemaps']
+        
+        return await self.scrape_location(
+            location, 
+            category, 
+            sources=sources,
+            max_results_per_source=20  # Reduced for quick scraping
+        )
+    
+    async def comprehensive_scrape(self, location: str, category: str = "", selected_sources: Optional[List[str]] = None) -> Dict[str, Any]:
+        """Comprehensive scrape with all real sources - more results, thorough search."""
+        logging.info(f"[COMPREHENSIVE SCRAPE] Starting for location: {location}, category: {category}")
+        
+        # Use all available real sources for comprehensive scraping (no demo data sources)
+        sources = selected_sources or ['justdial', 'googlemaps', 'yellowpages']
+        
+        return await self.scrape_location(
+            location, 
+            category, 
+            sources=sources,
+            max_results_per_source=50  # Higher limit for comprehensive scraping
+        )
+    
+    def get_scraping_statistics(self) -> Dict[str, Any]:
+        """Get statistics about scraping operations."""
+        stats = self.db_manager.get_statistics()
+        stats['scraper_type'] = 'REAL_BUSINESS_DATA_ONLY'
+        stats['demo_data_count'] = 0  # Always 0 for real scraper
+        return stats

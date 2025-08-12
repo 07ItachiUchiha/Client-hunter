@@ -9,12 +9,12 @@ from typing import List, Dict, Any
 import plotly.express as px
 import plotly.graph_objects as go
 
-# Configure logging
+# Configure logging with proper encoding for Windows
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler('data/scraping.log'),
+        logging.FileHandler('data/scraping.log', encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
@@ -22,7 +22,7 @@ logging.basicConfig(
 # Import our modules
 from database import DatabaseManager
 from utils import ScrapingUtils
-from scraper import BusinessScraper
+from scraper.real_business_scraper import RealBusinessScraper
 
 # Page configuration
 st.set_page_config(
@@ -78,7 +78,7 @@ if 'utils' not in st.session_state:
     st.session_state.utils = ScrapingUtils()
 
 if 'scraper' not in st.session_state:
-    st.session_state.scraper = BusinessScraper(
+    st.session_state.scraper = RealBusinessScraper(
         st.session_state.utils,
         st.session_state.db_manager
     )
@@ -158,33 +158,30 @@ def setup_sidebar():
         st.markdown("### Settings")
         
         # Scraping sources
-        st.markdown("**Scraping Sources**")
+        st.markdown("**Scraping Sources (REAL DATA ONLY)**")
         
-        # Initialize default sources if not set
+        # Initialize default sources if not set - REAL DATA SOURCES ONLY
         if 'selected_sources' not in st.session_state:
-            st.session_state.selected_sources = ['justdial', 'indiamart', 'it_clients']
+            st.session_state.selected_sources = ['justdial', 'googlemaps']  # Removed indiamart and it_clients
         
         sources = {
             'JustDial': st.checkbox('JustDial', value='justdial' in st.session_state.selected_sources, key="source_justdial"),
-            'IndiaMART': st.checkbox('IndiaMART', value='indiamart' in st.session_state.selected_sources, key="source_indiamart"),
+            # Removed IndiaMART - no real scraper available
             'Yellow Pages': st.checkbox('Yellow Pages', value='yellowpages' in st.session_state.selected_sources, key="source_yellowpages"),
             'Google Maps': st.checkbox('Google Maps', value='googlemaps' in st.session_state.selected_sources, key="source_googlemaps"),
-            'IT Clients': st.checkbox('IT Service Prospects', value='it_clients' in st.session_state.selected_sources, key="source_it_clients",
-                                    help="Target businesses needing IT services and digital transformation")
+            # Removed IT Clients - generates demo data
         }
         
         # Update selected sources based on checkboxes
         st.session_state.selected_sources = []
         for source, selected in sources.items():
             if selected:
-                if source == 'IT Clients':
-                    st.session_state.selected_sources.append('it_clients')
-                elif source == 'Yellow Pages':
+                if source == 'Yellow Pages':
                     st.session_state.selected_sources.append('yellowpages')
                 elif source == 'Google Maps':
                     st.session_state.selected_sources.append('googlemaps')
                 else:
-                    st.session_state.selected_sources.append(source.lower())
+                    st.session_state.selected_sources.append(source.lower())  # justdial
         
         # Show currently selected sources
         if st.session_state.selected_sources:

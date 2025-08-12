@@ -60,9 +60,9 @@ class JustDialScraper:
             for term in search_terms[:2]:  # Limit to 2 terms to avoid timeouts
                 logging.info(f"Searching JustDial for '{term}' in {location}")
                 
-                # Generate sample data for demonstration
-                sample_businesses = self._generate_sample_data(location, term, 3)
-                businesses.extend(sample_businesses)
+                # TODO: Implement actual JustDial scraping
+                # For now, return empty list until real scraping is implemented
+                logging.warning("JustDial scraping not yet implemented - returning empty results")
                 
                 # Add realistic delay
                 await asyncio.sleep(random.uniform(1, 2))
@@ -71,35 +71,6 @@ class JustDialScraper:
             logging.error(f"Error searching JustDial: {e}")
         
         logging.info(f"JustDial found {len(businesses)} businesses")
-        return businesses
-    
-    def _generate_sample_data(self, location: str, category: str, count: int) -> List[Dict[str, Any]]:
-        """Generate realistic sample business data for testing."""
-        businesses = []
-        
-        business_names = {
-            'restaurants': ['Spice Garden Restaurant', 'Royal Dining', 'Curry Palace', 'Food Junction'],
-            'shops': ['City Store', 'Fashion Plaza', 'Electronics Hub', 'General Store'],
-            'services': ['Quick Service Center', 'Professional Solutions', 'Care Services', 'Expert Consultancy']
-        }
-        
-        names = business_names.get(category, ['Business Center', 'Service Point', 'Commercial Hub'])
-        
-        for i in range(count):
-            name = f"{names[i % len(names)]} {location}"
-            business = {
-                'business_name': name,
-                'address': f"{i+1} Main Street, {location}",
-                'contact': f"+91 98765{43210 + i}",
-                'location': location,
-                'category': category,
-                'source': 'JustDial',
-                'website': f"https://{name.lower().replace(' ', '')}.com"
-            }
-            
-            if self.utils.is_valid_business_data(business):
-                businesses.append(business)
-        
         return businesses
 
 
@@ -136,51 +107,24 @@ class IndiaMArtScraper:
                 pass
     
     async def search_businesses(self, location: str, category: str = "", max_pages: int = 2) -> List[Dict[str, Any]]:
-        """Search businesses with fallback to sample data."""
+        """Search businesses on IndiaMART."""
         businesses = []
         
         try:
-            # Generate sample B2B data
+            # TODO: Implement actual IndiaMART scraping
+            # For now, return empty list until real scraping is implemented
+            logging.warning("IndiaMART scraping not yet implemented - returning empty results")
+            
             terms = [category] if category else ["suppliers", "manufacturers", "traders"]
             
             for term in terms[:2]:
-                sample_data = self._generate_b2b_sample_data(location, term, 2)
-                businesses.extend(sample_data)
+                # Placeholder for actual scraping implementation
                 await asyncio.sleep(1)
         
         except Exception as e:
             logging.error(f"IndiaMART search error: {e}")
         
         logging.info(f"IndiaMART found {len(businesses)} businesses")
-        return businesses
-    
-    def _generate_b2b_sample_data(self, location: str, category: str, count: int) -> List[Dict[str, Any]]:
-        """Generate B2B sample data."""
-        businesses = []
-        
-        b2b_names = {
-            'suppliers': ['Global Suppliers', 'Prime Supply Co', 'Universal Suppliers'],
-            'manufacturers': ['Metro Manufacturing', 'Industrial Works', 'Production House'],
-            'traders': ['Trade Hub', 'Commercial Traders', 'Business Partners']
-        }
-        
-        names = b2b_names.get(category, ['B2B Solutions', 'Commercial Enterprise'])
-        
-        for i in range(count):
-            name = f"{names[i % len(names)]} {location}"
-            business = {
-                'business_name': name,
-                'address': f"Industrial Area {i+1}, {location}",
-                'contact': f"+91 97654{32100 + i}",
-                'location': location,
-                'category': category,
-                'source': 'IndiaMART',
-                'website': f"https://{name.lower().replace(' ', '')}.co.in"
-            }
-            
-            if self.utils.is_valid_business_data(business):
-                businesses.append(business)
-        
         return businesses
 
 
@@ -223,14 +167,13 @@ class YellowPagesScraper:
         businesses = []
         
         try:
-            # Due to SSL certificate issues, use sample data
-            logging.info(f"Yellow Pages search for '{category}' in {location} (using sample data)")
+            # Real scraping implementation needed - no demo data generation
+            logging.warning(f"Real Yellow Pages scraping not yet implemented for '{category}' in {location}")
             
             terms = [category] if category else ["business", "services"]
             
             for term in terms[:1]:  # Just one term to avoid duplicates
-                sample_data = self._generate_directory_sample_data(location, term, 2)
-                businesses.extend(sample_data)
+                logging.info(f"Yellow Pages search for '{term}' in {location} - implementation needed")
                 await asyncio.sleep(1)
         
         except Exception as e:
@@ -238,31 +181,4 @@ class YellowPagesScraper:
         
         logging.info(f"Yellow Pages found {len(businesses)} businesses")
         return businesses
-    
-    def _generate_directory_sample_data(self, location: str, category: str, count: int) -> List[Dict[str, Any]]:
-        """Generate directory-style sample data."""
-        businesses = []
-        
-        directory_names = {
-            'business': ['Central Business Hub', 'Commercial Center', 'Business Plaza'],
-            'services': ['Service Solutions', 'Professional Services', 'Expert Care']
-        }
-        
-        names = directory_names.get(category, ['Directory Listing', 'Local Business'])
-        
-        for i in range(count):
-            name = f"{names[i % len(names)]} {location}"
-            business = {
-                'business_name': name,
-                'address': f"Commercial Street {i+1}, {location}",
-                'contact': f"+91 96543{21000 + i}",
-                'location': location,
-                'category': category,
-                'source': 'Yellow Pages',
-                'website': f"https://{name.lower().replace(' ', '')}.in"
-            }
-            
-            if self.utils.is_valid_business_data(business):
-                businesses.append(business)
-        
-        return businesses
+

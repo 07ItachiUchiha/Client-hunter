@@ -46,8 +46,8 @@ async def test_real_scraper():
         print(f"\n📍 Searching for REAL {category} businesses in {location}")
         print("⏳ This may take a few minutes as we're fetching real data...")
         
-        # Set up sources - excluding API-based ones unless keys are available
-        sources = ['justdial_real', 'local_directories']
+        # Set up sources - using ACTUAL web scrapers
+        sources = ['justdial_real', 'yellowpages_real']
         
         # Check for Google Maps API key
         if os.getenv('GOOGLE_MAPS_API_KEY'):
@@ -56,7 +56,8 @@ async def test_real_scraper():
         else:
             print("ℹ️  No Google Maps API key found - skipping Google Maps (you can add GOOGLE_MAPS_API_KEY environment variable)")
         
-        print(f"🔍 Using sources: {', '.join(sources)}")
+        print(f"🔍 Using ACTUAL web scraping sources: {', '.join(sources)}")
+        print("⚠️  This will make REAL HTTP requests to live websites!")
         
         # Run real scraping
         start_time = datetime.now()
